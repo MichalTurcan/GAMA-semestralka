@@ -1,0 +1,277 @@
+.navbar {
+    background-color: transparent;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+
+}
+
+
+.navbar-scrolled {
+    background-color: rgb(18, 18, 18);
+
+}
+
+#navbar_mobile {
+    background-color: transparent;
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
+
+#logo {
+    transition: all 0.5s;
+    transition-timing-function: ease;
+}
+
+.nav-text .nav-text2 .nav-text3 .nav-text4 {
+    transition: all 0.5s;
+    transition-timing-function: ease;
+
+}
+
+.nav-link {
+    color: rgb(253, 253, 253);
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(253, 253, 253);
+}
+
+.dark-section {
+    background-color: rgb(38, 38, 38);
+
+    color: rgb(253, 253, 253);
+}
+
+.light-section {
+    background-color: rgb(253, 253, 253);
+
+    color: rgb(38, 38, 38);
+}
+
+
+
+section h1::first-letter {
+    color: rgb(235, 18, 2);
+}
+
+.carousel .carousel-item {
+    height: 90vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+}
+
+.image-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(images/backgroun.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(253, 253, 253);
+}
+
+.soc a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+
+
+
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: rgb(235, 18, 2);
+    color: rgb(253, 253, 253);
+    width: 5vh;
+    height: 5vh;
+    font-size: 18px;
+    border-radius: 200px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+
+}
+
+#myBtn:hover {
+    background-color: rgb(18, 18, 18);
+
+    transform: scale(1.3);
+}
+
+#kontakt .col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+#kontakt .card {
+    background-color: rgb(253, 253, 253);
+    color: rgb(18, 18, 18);
+    border-radius: 10px;
+    width: 90%;
+
+}
+
+#kontakt .profile {
+    text-align: center;
+}
+
+.card__image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid #272133;
+    margin-top: 20px;
+    box-shadow: 0 10px 50px rgb(235, 18, 2);
+}
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
+}
+
+.social-icons i {
+    color: rgb(253, 253, 253);
+    position: absolute;
+    top: 0.65em;
+    left: 0.96em;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, rgb(235, 18, 2), rgb(18, 18, 18));
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    color: rgb(235, 18, 2);
+    background: -webkit-linear-gradient(45deg, rgb(235, 18, 2), rgb(18, 18, 18));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
+
+
+/*KONTAKT INPUT*/
+.box {
+    display: flex;
+    justify-content: left;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: transparent;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid rgb(253, 253, 253);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(253, 253, 253);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus~label {
+    top: -5px;
+}
+
+input:valid~label {
+    top: -5px;
+    color: transparent;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: rgb(253, 253, 253);
+}
+
+.inputbox i {
+    position: absolute;
+    right: 8px;
+    color: rgb(253, 253, 253);
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.submitbutton {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    border: none;
+    outline: none;
+    font-size: 1em;
+    transition: all 265ms ease-out;
+}
+
+
+.submitbutton:hover {
+    transform: scale(1.2);
+    transition: all 265ms ease-in;
+}
+
+/*NOTIFICATION*/
+.alert {
+    background-color: rgb(38, 38, 38);
+    border: none;
+    outline: none;
+    color: rgb(253, 253, 253);
+
+    opacity: 1;
+}
