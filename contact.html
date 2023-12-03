@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamaKlub</title>
+    <title>GamaKlub:Kontakt</title>
+    <meta name="author" content="Michal Turčan">
+
     <link rel="icon" type="image/x-icon" href="images/logo_fav.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -209,14 +211,14 @@
                                     <div class="inputbox">
                                         <i class="bi bi-person-fill"></i>
                                         <input type="text" id="name" class="cont_meno" required>
-                                        <label for="name">Meno</label>
+                                        <label for="name" id="povinne">Meno</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 ">
                                     <div class="inputbox">
                                         <i class="bi bi-person-fill"></i>
                                         <input type="text" id="surname" class="cont_priezvisko" required>
-                                        <label for="surname">Priezvisko</label>
+                                        <label for="surname" id="povinne">Priezvisko</label>
                                     </div>
                                 </div>
                             </div>
@@ -226,14 +228,14 @@
                                     <div class="inputbox">
                                         <i class="bi bi-envelope-fill"></i>
                                         <input type="mail" id="email" required>
-                                        <label for="email">Email</label>
+                                        <label for="email" id="povinne">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 ">
                                     <div class="inputbox">
                                         <i class="bi bi-person-fill"></i>
                                         <input type="text" id="number" class="cont_cislo" required>
-                                        <label for="number">Osobné číslo</label>
+                                        <label for="number" id="povinne">Osobné číslo</label>
                                     </div>
                                 </div>
                                 
@@ -243,7 +245,7 @@
                                     <div class="inputbox">
                                         <i class="bi bi-chat-fill"></i>
                                         <input type="text" id="message" required>
-                                        <label for="message">Správa</label>
+                                        <label for="message" id="povinne">Správa</label>
                                     </div>
                                 </div>
                                 
@@ -258,8 +260,8 @@
 
                             </div>
 
-                            <div class="alert alert-primary" id="alert">
-                                <i class="bi bi-check-circle notification_icon"></i>
+                            <div class="alert alert-primary notification" id="alert" >
+                                <i class="bi bi-check-circle notification_icon"></i><div style="display: inline;" id="notification_text">...</div>
                               </div>
                         </div>
                     </div>
@@ -284,7 +286,7 @@
 
     <section class="dark-section footer">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright: GamaKlub
+            ©2023 Turčan Michal (3ZIG20)
         </div>
     </section>
 
